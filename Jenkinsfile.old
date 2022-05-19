@@ -1,4 +1,10 @@
 pipeline {
+  stage ('Git Checkout') {
+    steps {
+      
+    }
+  }
+  
   stage ('SAST') {
       steps {
         withSonarQubeEnv('sonar') {
@@ -7,4 +13,3 @@ pipeline {
         }
       }
     }
-   }
